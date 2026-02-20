@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+  background-color: #F8E4E9;
+}
+
+.pixel {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}

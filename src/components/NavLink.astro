@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets'
+const { title, to, inactive, active } = Astro.props
+const currentPath = Astro.url.pathname
+
+// Naive, but I don't care :D
+const isActive = title === 'Home' ? currentPath === '/' : currentPath.includes(to)
+---
+
+<a href={to} alt={title}>
+  <Image class='pixel' src={isActive ? active : inactive} alt={`${title}-image`}} />
+</a>

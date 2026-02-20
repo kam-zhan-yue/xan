@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets'
+import NavLink from './NavLink.astro'
+import workButton from '../assets/work-button.png'
+import workButtonActive from '../assets/work-button-active.png'
+import experimentalButton from '../assets/experimental-button.png'
+import experimentalButtonActive from '../assets/experimental-button-active.png'
+import homeButton from '../assets/home-button.png'
+import homeButtonActive from '../assets/home-button-active.png'
+import personalButton from '../assets/personal-button.png'
+import personalButtonActive from '../assets/personal-button-active.png'
+
+---
+
+<div class="flex flex-row justify-center mt-4">
+  <NavLink title='Home' to='/' active={homeButtonActive} inactive={homeButton} />
+  <NavLink title='Work' to='/work/' active={workButtonActive} inactive={workButton} />
+  <NavLink title='Personal' to='/games/' active={personalButtonActive} inactive={personalButton} />
+  <NavLink title='Experimental' to='/experimental/' active={experimentalButtonActive} inactive={experimentalButton} />
+</div>
