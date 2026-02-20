@@ -1,6 +1,24 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "m5x7";
+  src: url("../assets/fonts/m5x7/m5x7.ttf"),
+       url("../assets/fonts/m5x7/m5x7.woff"),
+       url("../assets/fonts/m5x7/m5x7.woff2"),
+       url("../assets/fonts/m5x7/m5x7.svg#filename");
+}
+
+@font-face {
+  font-family: "m6x11";
+  src: url("../assets/fonts/m6x11/m6x11.ttf"),
+       url("../assets/fonts/m6x11/m6x11.woff"),
+       url("../assets/fonts/m6x11/m6x11.woff2"),
+       url("../assets/fonts/m6x11/m6x11.svg#filename");
+}
+
+
 body {
+  font-family: "Ubuntu", sans-serif;
   background-color: #F8E4E9;
 }
 
@@ -8,4 +26,27 @@ body {
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
+}
+
+.alexander-kam {
+  font-family: "m6x11";
+  font-size: 48px;
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.title {
+  font-size: 28px;
+  color: rgb(237, 0, 139);
+}
+
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
 }

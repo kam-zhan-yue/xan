@@ -1,14 +1,11 @@
 ---
 import '../styles/global.css'
-import { Image } from 'astro:assets'
-import alex from '../assets/alex.png'
-import Layout from '../layouts/Layout.astro'
+import MainLayout from '../layouts/MainLayout.astro'
 import Navigation from '../components/Navigation.astro'
 ---
-<Layout>
-  <div class="flex flex-row justify-center">
-    <Image class="w-32 h-32" src={alex} alt="Alex Kam" />
-  </div>
-  <h1 class="text-center">alexander kam</h1>
-  <h3 class="text-center">game programmer</h1>
-</Layout>
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<MainLayout title="i make games, sometimes" showName>
+  <p>This is where I would put my blog posts, if I had any</p>
+</MainLayout>
