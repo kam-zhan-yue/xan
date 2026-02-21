@@ -1,0 +1,14 @@
+---
+import '../styles/global.css'
+import Layout from './Layout.astro'
+import Navigation from '../components/Navigation.astro'
+const { title } = Astro.props
+---
+<Layout title={title}>
+  <header>
+    <Navigation />
+  </header>
+  <body>
+    <slot />
+  </body>
+</Layout />

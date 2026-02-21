@@ -8,10 +8,10 @@ const { to, external, image, title, tag, role, subtitle, team } = Astro.props
 ---
 
 
-<a href={to} alt={`${title}-card`} target={external ? "_blank" : undefined} referrer={external ? "noopener noreferrer" : undefined}>
-  <div class="card flex flex-col items-start">
+<div class="card flex flex-col items-start">
+  <a href={to} alt={`${title}-card`} target={external ? "_blank" : undefined} referrer={external ? "noopener noreferrer" : undefined}>
     {!image && <div class="card-image" />}
-    {!!image && <Image class="card-image" src={image} alt={`${title}-image`} />}
+    {!!image && <Image loading="eager" class="card-image" src={image} alt={title} />}
     <div class="w-full">
       <p class="font-anonymous text-center text-secondary text-lg">{title}</h3>
       {tag && <div class="card-tag">{tag}</div>}
@@ -22,12 +22,12 @@ const { to, external, image, title, tag, role, subtitle, team } = Astro.props
     {team && (
       <div class="relative">
         <div class="absolute flex flex-row bottom-0 w-3 h-3">
-          <Image class="object-contain pixel" src={person} alt="person-icon" />
+          <Image loading="eager" class="object-contain pixel" src={person} alt="person-icon" />
           <div class="flex items-center h-3">
             <div class="font-pixel-light text-sm text-secondary">{team}</div>
           </div>
         </div>
       </div>
     )}
-  </div>
-</a>
+  </a>
+</div>

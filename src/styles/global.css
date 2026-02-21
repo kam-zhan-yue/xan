@@ -8,6 +8,7 @@
   --font-anonymous: "Anonymous Pro", monospace;
   --font-pixel: "m6x11";
   --font-pixel-light: "m5x7";
+  --spacing: 4px;
 }
 
 @font-face {

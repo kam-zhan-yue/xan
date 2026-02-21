@@ -8,9 +8,9 @@ const currentPath = Astro.url.pathname
 const isActive = title === 'Home' ? currentPath === '/' : currentPath.includes(to)
 ---
 
-{isActive && <Image class='pixel' src={active} alt={`${title}-image`}} />}
+{isActive && <Image class='pixel' loading="eager" src={active} alt={title} />}
 {!isActive && (
   <a class="nav-link" href={to} alt={title}>
-    <Image class='pixel' src={inactive} alt={`${title}-image`}} />
+    <Image class='pixel' loading="eager" src={inactive} alt={title} />
   </a>
 )}

@@ -1,15 +1,12 @@
 ---
 import '../styles/global.css'
-import { Image } from 'astro:assets'
-import alex from '../assets/alex.png'
-import Layout from './Layout.astro'
+import Alex from '../components/Alex.astro'
+import NavLayout from './NavLayout.astro'
 const { title, showName } = Astro.props
 ---
-<Layout title={title}>
-  <div class="flex flex-row justify-center">
-    <Image class="w-32 h-32" src={alex} alt="Alex Kam" />
-  </div>
+<NavLayout title={title}>
+  <Alex />
   {showName && <div class="alexander-kam text-center">alexander kam</div>}
   <h1 class="title text-center mb-3">{title}</h1>
   <slot />
-</Layout />
+</NavLayout />
