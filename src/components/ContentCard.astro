@@ -9,7 +9,7 @@ const { to, external, image, title, tag, role, subtitle, team } = Astro.props
 
 
 <div class="card flex flex-col items-start">
-  <a href={to} alt={`${title}-card`} target={external ? "_blank" : undefined} referrer={external ? "noopener noreferrer" : undefined}>
+  <a class="w-full" href={to} alt={`${title}-card`} target={external ? "_blank" : undefined} referrer={external ? "noopener noreferrer" : undefined}>
     {!image && <div class="card-image" />}
     {!!image && <Image loading="eager" class="card-image" src={image} alt={title} />}
     <div class="w-full">

@@ -31,7 +31,8 @@ interface Project {
 
 const work: Project[] = [
   { 
-    to: '/work/uptick/',
+    to: 'https://www.uptickhq.com/au/',
+    external: true,
     title: 'Uptick Webapp',
     tag: 'Uptick',
     role: 'Software Developer',
@@ -40,7 +41,8 @@ const work: Project[] = [
     team: '30+',
   },
   { 
-    to: '/work/death-game-hotel/',
+    to: 'https://store.steampowered.com/app/3636230/Death_Game_Hotel_a_White_Owls_game/',
+    external: true,
     title: 'Death Game Hotel',
     tag: 'Skeleton Crew Studio',
     role: 'Unity Programmer',
@@ -49,7 +51,8 @@ const work: Project[] = [
     team: '10+',
   },
   { 
-    to: '/work/postknight-2',
+    to: 'https://postknight.com/',
+    external: true,
     title: 'Postknight 2',
     tag: 'Kurechii',
     role: 'Unity Programmer',
