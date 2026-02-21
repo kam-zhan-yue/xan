@@ -1,4 +1,5 @@
 ---
+import '../styles/nav.css'
 import { Image } from 'astro:assets'
 const { title, to, inactive, active } = Astro.props
 const currentPath = Astro.url.pathname
@@ -7,6 +8,9 @@ const currentPath = Astro.url.pathname
 const isActive = title === 'Home' ? currentPath === '/' : currentPath.includes(to)
 ---
 
-<a href={to} alt={title}>
-  <Image class='pixel' src={isActive ? active : inactive} alt={`${title}-image`}} />
-</a>
+{isActive && <Image class='pixel' src={active} alt={`${title}-image`}} />}
+{!isActive && (
+  <a class="nav-link" href={to} alt={title}>
+    <Image class='pixel' src={inactive} alt={`${title}-image`}} />
+  </a>
+)}

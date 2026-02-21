@@ -1,6 +1,14 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro'
+import Content from '../components/Content.astro'
+import ContentCard from '../components/ContentCard.astro'
+import { experimental } from '../data/projects.ts'
 ---
 <MainLayout title="experimental stuff">
-  <h3 class="text-center">ventures into other fields, game-dev related or not</h3>
+  <h3 class="text-center mb-2">ventures into other fields, game-dev related or not</h3>
+  <Content>
+    {experimental.map((data) => (
+      <ContentCard {...data} />
+    ))}
+  </Content>
 </MainLayout>

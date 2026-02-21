@@ -1,6 +1,14 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro'
+import Content from '../components/Content.astro'
+import ContentCard from '../components/ContentCard.astro'
+import { games } from '../data/projects.ts'
 ---
 <MainLayout title="personal projects">
-  <h3 class="text-center">long-term games, game jams, and hackathons</h3>
+  <h3 class="text-center mb-2">long-term games, game jams, and hackathons</h3>
+  <Content>
+    {games.map((data) => (
+      <ContentCard {...data} />
+    ))}
+  </Content>
 </MainLayout>

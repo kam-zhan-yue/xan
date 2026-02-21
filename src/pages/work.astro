@@ -1,7 +1,18 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro'
+import Content from '../components/Content.astro'
+import ContentCard from '../components/ContentCard.astro'
+import uptick from '../assets/modules/uptick/uptick-preview.png'
+import dgh from '../assets/modules/death-game-hotel/death-game-hotel-preview.png'
+import pk2 from '../assets/modules/postknight-2/postknight-2-preview.png'
+import { work } from '../data/projects.ts'
 ---
 <MainLayout title="professional work">
-  <h3 class="text-center">commercial games and software that I have contributed to</h3>
+  <h3 class="text-center mb-2">commercial games and software that I have contributed to</h3>
+  <Content>
+    {work.map((data) => (
+      <ContentCard {...data} />
+    ))}
+  </Content>
 </MainLayout>
 
