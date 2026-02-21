@@ -4,11 +4,11 @@ import { Image } from 'astro:assets'
 import person from '../assets/icons/team-person.png'
 
 
-const { to, image, title, tag, role, subtitle, team } = Astro.props
+const { to, external, image, title, tag, role, subtitle, team } = Astro.props
 ---
 
 
-<a href={to} alt={`${title}-card`}>
+<a href={to} alt={`${title}-card`} target={external ? "_blank" : undefined} referrer={external ? "noopener noreferrer" : undefined}>
   <div class="card flex flex-col items-start">
     {!image && <div class="card-image" />}
     {!!image && <Image class="card-image" src={image} alt={`${title}-image`} />}

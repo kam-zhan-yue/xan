@@ -16,6 +16,7 @@ import drink from '../assets/modules/one-last-drink/one-last-drink-preview.png'
 import greenpath from '../assets/modules/greenpath/greenpath-preview.png'
 import ascension from '../assets/modules/ascension/ascension-preview.png'
 import gmc from '../assets/modules/gmc/gmc-preview.png'
+import twoYears from '../assets/modules/two-years/two-years-preview.png'
 
 interface Project {
   title: string
@@ -60,7 +61,8 @@ const work: Project[] = [
 
 const games: Project[] = [
   { 
-    to: '/games/retronauts/',
+    to: 'https://codebrew-2025-frontend.onrender.com/',
+    external: true,
     title: 'Retronauts',
     tag: 'Hackathon',
     role: 'Programmer (Three.js)',
@@ -69,7 +71,8 @@ const games: Project[] = [
     team: '4',
   },
   { 
-    to: '/games/anatis/',
+    to: 'https://codebrew-2025-frontend.onrender.com/',
+    external: true,
     title: 'Anatis',
     tag: 'Game Jam',
     role: 'Programmer (Unity)',
@@ -78,7 +81,8 @@ const games: Project[] = [
     team: '1',
   },
   { 
-    to: '/games/swirly-whirly/',
+    to: 'https://alexander-kam.itch.io/swirly-whirly/',
+    external: true,
     title: 'Swirly Whirly',
     tag: 'Game Jam',
     role: 'Programmer (Bevy)',
@@ -87,7 +91,8 @@ const games: Project[] = [
     team: '2',
   },
   { 
-    to: '/games/a-hundred-little-guys',
+    to: 'https://alexander-kam.itch.io/a-hundred-little-guys/',
+    external: true,
     title: 'A Hundred Little Guys',
     tag: 'Game Jam',
     role: 'Programmer (Godot)',
@@ -96,7 +101,8 @@ const games: Project[] = [
     team: '1',
   },
   { 
-    to: '/games/relic/',
+    to: 'https://alexander-kam.itch.io/relic/',
+    external: true,
     title: 'Relic',
     tag: 'Long Term Project',
     role: 'Programmer (Unity)',
@@ -105,7 +111,8 @@ const games: Project[] = [
     team: '3',
   },
   { 
-    to: '/games/re-collect/',
+    to: 'https://science-gallery.onrender.com/',
+    external: true,
     title: 'RE:Collect',
     tag: 'Long Term Project',
     role: 'Programmer (React)',
@@ -114,7 +121,8 @@ const games: Project[] = [
     team: '6',
   },
   {
-    to: '/games/tide',
+    to: 'https://alexander-kam.itch.io/gmtk-2024/',
+    external: true,
     title: 'Tide',
     tag: 'Game Jam',
     role: 'Programmer (Godot)',
@@ -123,7 +131,8 @@ const games: Project[] = [
     team: '3',
   },
   {
-    to: '/games/',
+    to: 'https://beans-for-good.onrender.com/',
+    external: true,
     title: 'Beans for Good',
     tag: 'Hackathon',
     role: 'Programmer (React)',
@@ -132,7 +141,8 @@ const games: Project[] = [
     team: '3',
   },
   {
-    to: '/games/',
+    to: 'https://alexander-kam.itch.io/the-shackled/',
+    external: true,
     title: 'The Shackled',
     tag: 'Game Jam',
     role: 'Programmer (Unity)',
@@ -141,7 +151,8 @@ const games: Project[] = [
     team: '2',
   },
   {
-    to: '/games/',
+    to: 'https://alexander-kam.itch.io/sleepwalker/',
+    external: true,
     title: 'Sleepwalker',
     tag: 'Game Jam',
     role: 'Programmer (Unity)',
@@ -150,7 +161,8 @@ const games: Project[] = [
     team: '3',
   },
   {
-    to: '/games/',
+    to: 'https://alexander-kam.itch.io/upbeet/',
+    external: true,
     title: 'Upbeet',
     tag: 'Game Jam',
     role: 'Programmer (Unity)',
@@ -159,7 +171,8 @@ const games: Project[] = [
     team: '3',
   },
   {
-    to: '/games/',
+    to: 'https://alexander-kam.itch.io/one-last-drink/',
+    external: true,
     title: 'One Last Drink',
     tag: 'Hackathon',
     role: 'Programmer (Unity)',
@@ -168,7 +181,8 @@ const games: Project[] = [
     team: '3',
   },
   {
-    to: '/games/',
+    to: 'https://devpost.com/software/greenpath-vw856r/',
+    external: true,
     title: 'Green Path',
     tag: 'Hackathon',
     role: 'Programmer (Javascript)',
@@ -177,7 +191,8 @@ const games: Project[] = [
     team: '4',
   },
   {
-    to: '/games/',
+    to: 'https://alexander-kam.itch.io/ascension/',
+    external: true,
     title: 'Ascension',
     tag: 'Long Term Project',
     role: 'Programmer (Unity)',
@@ -197,6 +212,16 @@ const experimental: Project[] = [
     subtitle: 'Oct 2023 - Sep 2025',
     image: gmc,
     team: '350+',
+  },
+  { 
+    to: 'https://two-years-g1l1.onrender.com/',
+    external: true,
+    title: 'Two Years',
+    tag: 'Anniversary Gift',
+    role: 'Rust + Typescript',
+    subtitle: 'July 2025',
+    image: twoYears,
+    team: '1',
   },
 ]
 
