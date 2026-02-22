@@ -28,7 +28,7 @@
 }
 
 body {
-  font-family: var(--font-ubuntu);
+  font-family: var(--font-anonymous);
   background-color: #F8E4E9;
   text-align: justify;
 }
@@ -53,8 +53,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-family: var(--font-ubuntu);
   margin-bottom: 8px;
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: underline;
 }
 
 b, strong {
@@ -73,4 +77,8 @@ h3 {
 
 h6 {
   font-size: 14px;
+}
+
+br {
+  border-bottom: solid 1px;
 }

@@ -9,21 +9,21 @@ const { to, external, image, title, tag, role, subtitle, team } = Astro.props
 
 
 <div class="card flex flex-col items-start">
-  <a class="w-full" href={to} alt={`${title}-card`} target={external ? "_blank" : undefined} referrer={external ? "noopener noreferrer" : undefined}>
-    {!image && <div class="card-image" />}
-    {!!image && <Image loading="eager" class="card-image" src={image} alt={title} />}
+  <a class="w-full no-underline!" href={to} alt={`${title}-card`} target={external ? "_blank" : undefined} referrer={external ? "noopener noreferrer" : undefined}>
+    {!image && <div class="card-image mb-1" />}
+    {!!image && <Image loading="eager" class="card-image mb-1" src={image} alt={title} />}
     <div class="w-full">
-      <p class="font-anonymous text-center text-secondary text-lg">{title}</h3>
-      {tag && <div class="card-tag">{tag}</div>}
-      <p class="font-anonymous text-center text-secondary text-sm mb-2">{role}</p>
-      <p class="font-anonymous text-center text-secondary text-xs">{subtitle}</p>
+      <div class="font-anonymous text-center text-secondary text-lg mb-0">{title}</div>
+      {tag && <div class="card-tag mb-0">{tag}</div>}
+      <div class="font-anonymous text-center text-secondary text-sm mb-2">{role}</div>
+      <div class="font-anonymous text-center text-secondary text-xs mb-0">{subtitle}</div>
     </div>
 
     {team && (
       <div class="relative">
         <div class="absolute flex flex-row bottom-0 w-3 h-3">
           <Image loading="eager" class="object-contain pixel" src={person} alt="person-icon" />
-          <div class="flex items-center h-3">
+          <div class="flex items-center">
             <div class="font-pixel-light text-sm text-secondary">{team}</div>
           </div>
         </div>

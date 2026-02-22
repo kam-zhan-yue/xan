@@ -2,21 +2,19 @@
 import '../styles/global.css'
 import MainLayout from '../layouts/MainLayout.astro'
 import Navigation from '../components/Navigation.astro'
+import Blog from '../components/Blog.astro'
 ---
+
 <MainLayout showName>
   <p>
     I'm a developer who makes games sometimes!
     I currently work as a software developer for Uptick, working with Django and React to make software that keeps people safe. 
-    Prior to that, I studied Computer Science at the University of Melbourne, where I ran a Game Makers' Club (with 350+ members!) and simultaneously undertook a number of game development internships in Malaysia and Japan.
+    Prior to that, I studied Computer Science at the University of Melbourne, where I ran a Game Makers' Club (with 350+ members!) and simultaneously undertook a number of game development internships in Malaysia and Japan. I love participating in game jams and making my ideas come to life!
     This is where I stockpile all the the things I want to say, but I never find the right opportunity to talk about.
-    <a class="text-secondary underline" href="files/Alexander_Kam_Resume (2024-11-07).pdf" target="_blank">See my resume here</a>!
+    <a href="files/Alexander_Kam_Resume (2024-11-07).pdf" target="_blank">See my resume here</a>!
   </p>
   <p>
     I'm currently based in <span class="text-secondary opacity-40">Kuala Lumpur Melbourne</span> <b>Kyoto</b>.
   </p>
-
-  <h3>Links</h3>
-  <ul>
-    <li>CV</li>
-  </ul>
+  <Blog />
 </MainLayout>

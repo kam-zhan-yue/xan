@@ -1,0 +1,10 @@
+---
+const { to, title, published } = Astro.props
+const publishedDate = published ? new Date(published).toLocaleDateString() : null
+---
+<a class="no-underline!" href={to}>
+  <li class="flex flex-row justify-between items-center h-10 hover:bg-secondary hover:text-white">
+    <div>{title}</div>
+    {publishedDate && <div>{publishedDate}</div>}
+  </li>
+</a>

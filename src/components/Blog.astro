@@ -1,0 +1,18 @@
+---
+import BlogListItem from '../components/BlogListItem.astro'
+import BlogList from '../components/BlogList.astro'
+
+const filterAndSort = (blogs, category: string) => {
+  return blogs.filter(blog => blog.frontmatter.category === category).sort((a, b) => {
+    const aDate = new Date(a.frontmatter.published)
+    const bDate = new Date(b.frontmatter.published)
+    return aDate < bDate
+  })
+}
+
+const blogs = Object.values(import.meta.glob('../pages/blog/*.md', { eager: true }))
+const programmingBlogs = filterAndSort(blogs, 'programming')
+---
+<BlogList title="Programming">
+  {programmingBlogs.map(blog => <BlogListItem to={blog.url} title={blog.frontmatter.title} published={blog.frontmatter.published}/>)} 
+</BlogList>
