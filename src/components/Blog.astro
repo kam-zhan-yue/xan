@@ -6,7 +6,7 @@ const filterAndSort = (blogs, category: string) => {
   return blogs.filter(blog => blog.frontmatter.category === category).sort((a, b) => {
     const aDate = new Date(a.frontmatter.published)
     const bDate = new Date(b.frontmatter.published)
-    return aDate < bDate
+    return bDate - aDate
   })
 }
 
