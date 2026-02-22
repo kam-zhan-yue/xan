@@ -222,7 +222,7 @@ const experimental: Project[] = [
     title: 'Two Years',
     tag: 'Anniversary Gift',
     role: 'Rust + Typescript',
-    subtitle: 'July 2025',
+    subtitle: 'June 2025 - July 2025',
     image: twoYears,
     team: '1',
   },

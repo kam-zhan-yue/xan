@@ -1,8 +1,9 @@
 ---
 import '../styles/global.css'
 import '../styles/nav.css'
+import '../styles/blog.css'
 import { Image } from 'astro:assets'
-import NavLink from '../components/NavLink.astro'
+import BackButton from '../components/BackButton.astro'
 import Alex from '../components/Alex.astro'
 import Layout from './Layout.astro'
 import backButton from '../assets/buttons/back-button.png'
@@ -11,15 +12,14 @@ const { frontmatter } = Astro.props
 
 <Layout title={frontmatter.title}>
   <header>
-    <div class="flex flex-row justify-center mt-4">
-      <a class="nav-link" href='javascript:history.back()' alt='back-button'>
-        <Image class='pixel' src={backButton} alt="back-button-image" />
-      </a>
-    </div>
+    <BackButton />
   </header>
   <body>
     <Alex />
     <h1 class="title text-center mb-3">{frontmatter.title}</h1>
+  <div class="blog">
     <slot />
+  </div>
+  <BackButton />
   </body>
 </Layout />

@@ -2,10 +2,12 @@
 
 @theme {
   --color-primary: #F8E4E9;
+  --color-primary-dark: #E59BAE;
   --color-secondary: #ED008B;
   --color-tertiary: #EBE63F;
   --font-ubuntu: "Ubuntu", sans-serif;
   --font-anonymous: "Anonymous Pro", monospace;
+  --font-fira-code: "Fira Code", monospace;
   --font-pixel: "m6x11";
   --font-pixel-light: "m5x7";
   --spacing: 4px;
@@ -47,9 +49,18 @@ body {
   color: black;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-anonymous);
   margin-bottom: 8px;
+  color: var(--color-secondary)
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 p {
@@ -81,4 +92,10 @@ h6 {
 
 br {
   border-bottom: solid 1px;
+}
+
+hr {
+  color: var(--color-secondary);
+  border-top-width: 2px;
+  margin-bottom: 8px;
 }
