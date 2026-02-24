@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/BlogLayout.astro
 title: Making Coding Fun Again - A Love Letter to Vim
 category: programming
 published: 2026-01-13

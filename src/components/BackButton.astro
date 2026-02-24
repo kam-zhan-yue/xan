@@ -2,9 +2,10 @@
 import '../styles/nav.css'
 import { Image } from 'astro:assets'
 import backButton from '../assets/buttons/back-button.png'
+const { back } = Astro.props
 ---
 <div class="flex flex-row justify-center mt-4">
-  <a class="nav-link" href='javascript:history.back()' alt='back-button'>
-    <Image class='pixel' src={backButton} alt="back-button-image" />
+  <a class="nav-link" href={back} alt='back-button-link'>
+    <Image class='pixel' src={backButton} alt="back-button" />
   </a>
 </div>

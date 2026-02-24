@@ -17,16 +17,16 @@
 }
 
 .blog pre:has(code) {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   padding: 6px;
   border-radius: 8px;
+  font-size: 14px;
 }
 
-.blog code {
+.blog :not(pre) code {
   font-family: var(--font-fira-code);
-  background-color: #24292e;
+  background-color: color-mix(in srgb, var(--color-primary-dark) 40%, transparent);
   border-radius: 4px;
-  color: white;
   padding-left: 2px;
   padding-right: 2px;
   font-size: 14px;

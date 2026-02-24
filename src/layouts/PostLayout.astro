@@ -2,24 +2,29 @@
 import '../styles/global.css'
 import '../styles/nav.css'
 import '../styles/blog.css'
+import '../styles/card.css'
 import { Image } from 'astro:assets'
 import BackButton from '../components/BackButton.astro'
 import Alex from '../components/Alex.astro'
 import Layout from './Layout.astro'
 import backButton from '../assets/buttons/back-button.png'
-const { frontmatter } = Astro.props
+const { frontmatter, back } = Astro.props
+const publishedDate = frontmatter.published ? new Date(frontmatter.published).toLocaleDateString() : null
 ---
 
-<Layout title={frontmatter.title}>
+<Layout title={frontmatter.title} back={back}>
   <header>
-    <BackButton />
+  <BackButton back="/" />
   </header>
   <body>
     <Alex />
-    <h1 class="title text-center mb-3">{frontmatter.title}</h1>
-  <div class="blog">
-    <slot />
-  </div>
-  <BackButton />
+    <div class="flex flex-col gap-2 text-center mb-3">
+      <h1 class="title mb-0!">{frontmatter.title}</h1>
+      {publishedDate && <div class="card-tag">Published on {publishedDate}</div>}
+    </div>
+    <div class="blog">
+      <slot />
+    </div>
+  <BackButton back="/" />
   </body>
 </Layout />
