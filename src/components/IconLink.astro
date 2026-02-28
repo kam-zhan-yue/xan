@@ -1,0 +1,9 @@
+---
+import '../styles/nav.css'
+import { Image } from 'astro:assets'
+const { title, to, src } = Astro.props
+---
+
+<a class="nav-link" href={to} alt={title} target="_blank" rel="noreferrer">
+  <Image class='pixel w-9' loading="eager" src={src} alt={title} />
+</a>

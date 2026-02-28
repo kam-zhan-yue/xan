@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: /src/layouts/BlogLayout.astro
 title: You Will Never Write Perfect Code
 category: programming
 published: 2026-02-24
@@ -34,7 +34,7 @@ if the standards change every few months?
 ---
 
 Ah yes, the age-old addage. Why even bother writing anything in any other language if Rust is already the gold standard?
-I mean it's not like Rust rewrites have been responsible for [global outages that impact millions of users before](https://blog.cloudflare.com/5-december-2025-outage/).
+I mean it's not like Rust rewrites have been responsible for [global outages that impact millions of users before](https://blog.cloudflare.com/18-november-2025-outage/#memory-preallocation).
 
 I'm no [stranger to Rust](https://github.com/kam-zhan-yue/swirly-whirly), but I'm no expert either. It is a great language with 
 great safeguards that help you write safer code. However, it is not a silver bullet.

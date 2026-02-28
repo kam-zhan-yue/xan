@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets'
+import IconLink from './IconLink.astro'
+import github from '../assets/icons/github-x26.png'
+import itch from '../assets/icons/itch-x26.png'
+import gmail from '../assets/icons/gmail-x26.png'
+import linkedin from '../assets/icons/linkedin-x26.png'
+---
+
+<div class="flex flex-row justify-center mt-4 gap-1">
+  <IconLink src={github} title="github" to="https://github.com/kam-zhan-yue/"/>
+  <IconLink src={itch} title="itch" to="https://alexander-kam.itch.io"/>
+  <IconLink src={linkedin} title="linkedin" to="https://www.linkedin.com/in/kamzhanyue/"/>
+  <IconLink src={gmail} title="gmail" to="mailto: kamzhanyue@gmail.com"/>
+</div>

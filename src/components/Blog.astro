@@ -10,7 +10,7 @@ const filterAndSort = (blogs, category: string) => {
   })
 }
 
-const blogs = Object.values(import.meta.glob('../pages/blog/*.md', { eager: true }))
+const blogs = Object.values(import.meta.glob('../pages/blog/*/index.md', { eager: true }))
 const programmingBlogs = filterAndSort(blogs, 'programming')
 ---
 <BlogList title="Programming">

@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: /src/layouts/BlogLayout.astro
 title: Making Coding Fun Again - A Love Letter to Vim
 category: programming
 published: 2026-01-13
@@ -16,7 +16,7 @@ tired of it all.
 To get a better understanding of what coding means to me, I think it's best to start at the very beginning.
 There are four notable turning points in my life (as of writing this article).
 
-![Life Chart](../../assets/blog/making-coding-fun-again/life-chart.png)
+![Life Chart](./life-chart.png)
 
 Now I hear you say. Alex, how can a 30+ year old text editor even equate to those things? Is it because it frees
 you from the suffocating confines of a mouse? Or its numerous keybinds that make you feel _blazingly fast_?
@@ -32,7 +32,7 @@ Let me get this straight. I never enjoyed the **act** of coding. I enjoyed the *
 the game I toiled at for weeks, watching developers shave minutes off their workflows from a tool I built.
 These are all moments that make me feel vindicated for the pain I suffered through.
 
-![Frontend Pain](../../assets/blog/making-coding-fun-again/greentext.png)
+![Frontend Pain](./greentext.png)
 
 
 > It was about the destination, not the journey
