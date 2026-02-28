@@ -7,6 +7,6 @@ const { title, showName } = Astro.props
 <NavLayout title={title}>
   <Alex />
   {showName && <div class="alexander-kam text-center">alexander kam</div>}
-  <h1 class="title text-center mb-3">{title}</h1>
+  {!showName && <h1 class="title text-center mb-3">{title}</h1>}
   <slot />
 </NavLayout />
