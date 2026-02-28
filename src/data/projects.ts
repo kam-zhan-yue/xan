@@ -17,6 +17,8 @@ import greenpath from '../assets/modules/greenpath/greenpath-preview.png'
 import ascension from '../assets/modules/ascension/ascension-preview.png'
 import gmc from '../assets/modules/gmc/gmc-preview.png'
 import twoYears from '../assets/modules/two-years/two-years-preview.png'
+import santa from '../assets/modules/santa/santa.png'
+import eyemageddon from '../assets/modules/eyemageddon/eyemageddon.png'
 
 interface Project {
   title: string
@@ -63,6 +65,26 @@ const work: Project[] = [
 ]
 
 const games: Project[] = [
+  { 
+    to: 'https://junyynyyn.itch.io/eyemageddon/',
+    external: true,
+    title: 'Eyemageddon',
+    tag: 'Game Jam',
+    role: 'Programmer (Godot)',
+    subtitle: 'UMGMC Jam 11 (2026)',
+    image: eyemageddon,
+    team: '3',
+  },
+  { 
+    to: 'https://alexander-kam.itch.io/the-people-vs-santa/',
+    external: true,
+    title: 'The People vs Santa',
+    tag: 'Game Jam',
+    role: 'Programmer (Unity)',
+    subtitle: 'UMGMC Jam 8 (2025)',
+    image: santa,
+    team: '2',
+  },
   { 
     to: 'https://codebrew-2025-frontend.onrender.com/',
     external: true,
