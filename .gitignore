@@ -6,6 +6,9 @@
 .pnp.js
 /aseprite
 /dist
+.vercel
+.netlify
+_site/
 
 # testing
 /coverage
