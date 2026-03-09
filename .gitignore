@@ -8,6 +8,7 @@
 /dist
 .vercel
 .netlify
+.astro/
 _site/
 
 # testing
