@@ -120,7 +120,7 @@ Oh yes. Yes it can.
 # We Live in a Society
 
 The societal impacts of AI are vast and it is impossible to talk about all of them without going into crazy amounts of depth.
-Instead, let's do something our AI-fried brains can easily comprehend: a lighting round of dialogue-like exposition!
+Instead, let's use my favourite digestible medium: a lighting round of dialogue-like exposition!
 
 > Did you know you can jailbreak LLMs to [extract copyright protected books verbatim?](https://arxiv.org/abs/2601.02671)
 
