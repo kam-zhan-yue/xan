@@ -61,8 +61,8 @@ ChatGPT displayed weaker brain activity that those who didn't.
 students report AI helping to develop skills in relation to schoolwork, while some express concerns about it impacting their skills.
 
 Like anything in life, things are not as straightforward as it seems. AI does play a hand in skill acquisition, due to the aforementioned cognitive
-load theory. However, overreliance has resulted in what I like to call **AI Brain**. When you've let Dario take the wheel and entrusted all your
-critical thinking to LLMs, it is evident that your skills will deteriorate without deeper thought.
+load theory. However, overreliance has resulted in what I like to call **AI Brain**. When you've let [Dario](https://en.wikipedia.org/wiki/Dario_Amodei)
+take the wheel and entrusted all your critical thinking to LLMs, it is evident that your skills will deteriorate without deeper thought.
 
 ## My Personal Takeaway
 As of writing this, **I am at a critical foundational part in my career**. I've had some experience as a Junior / Mid Developer in one field, but I'm aspiring
