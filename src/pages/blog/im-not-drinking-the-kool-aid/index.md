@@ -2,7 +2,7 @@
 layout: /src/layouts/BlogLayout.astro
 title: I'm Not Drinking the Kool-Aid (Yet)
 category: programming
-published: 2026-04-01
+published: 2026-04-03
 ---
 
 Let me get this out of the way first. **Yes, LLMs have had tremendous impacts on software development and our ability to write code has
