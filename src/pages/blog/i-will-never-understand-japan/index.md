@@ -51,6 +51,16 @@ because you have 100 other emails just like that one.
 
 Let's see some real-life examples.
 
+### SBI認証
+I wanted to setup an SBI account so that I could have access to NISA, Japan's retirement fund.
+I registered at the bank, but that wasn't the end of the process.
+- They sent me mail with more registration instructions. I had to sent photocopies of my identification
+- After a couple weeks, I got an email saying my account was set up. But to access my account, they were gonna send ANOTHER MAIL
+- This mail has my account number and password. And I would use it to access the website.
+- However, I'm always going between Tokyo and Kyoto so OBVIOUSLY I MISSED IT BECAUSE I HAVE TO BE IN PERSON
+- ARE YOU FUCKING KIDDING ME
+- WHY CAN'T YOU JUST GIVE ME THE ACCOUNT NUMBER
+
 
 ### An Email that sets up my ID and initial password
 ＜ID＞
