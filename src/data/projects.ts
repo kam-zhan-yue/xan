@@ -96,7 +96,7 @@ const games: Project[] = [
     team: '4',
   },
   { 
-    to: 'https://codebrew-2025-frontend.onrender.com/',
+    to: 'https://alexander-kam.itch.io/anatis/',
     external: true,
     title: 'Anatis',
     tag: 'Game Jam',
