@@ -17,6 +17,7 @@ import greenpath from '../assets/modules/greenpath/greenpath-preview.png'
 import ascension from '../assets/modules/ascension/ascension-preview.png'
 import gmc from '../assets/modules/gmc/gmc-preview.png'
 import twoYears from '../assets/modules/two-years/two-years-preview.png'
+import threeYears from '../assets/modules/three-years/three-years-preview.png'
 import santa from '../assets/modules/santa/santa.png'
 import eyemageddon from '../assets/modules/eyemageddon/eyemageddon.png'
 
@@ -246,6 +247,16 @@ const experimental: Project[] = [
     role: 'Rust + Typescript',
     subtitle: 'June 2025 - July 2025',
     image: twoYears,
+    team: '1',
+  },
+  { 
+    to: 'https://alexander-kam.itch.io/our-home',
+    external: true,
+    title: 'Three Years',
+    tag: 'Anniversary Gift',
+    role: 'Online Multiplayer (Godot)',
+    subtitle: 'June 2026 - August 2026',
+    image: threeYears,
     team: '1',
   },
 ]
